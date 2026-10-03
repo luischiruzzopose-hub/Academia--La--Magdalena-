@@ -394,3 +394,65 @@ footer .ruta-linea{background-color:#3A3842}
   /* el nav tiene backdrop-filter: el menú se posiciona respecto del nav, por eso alto explícito */
   .menu{bottom:auto;height:calc(100vh - var(--nav-h));height:calc(100dvh - var(--nav-h))}
 }
+
+/* ===== Desde 2018 (discreto) ===== */
+.sello-2018{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;background:var(--gris-fondo);border:1px solid var(--borde);color:var(--asfalto);border-radius:999px;padding:6px 14px}
+.sello-2018 b{color:var(--rojo);font-weight:800;font-size:14px}
+.sello-2018 span{font-weight:600;font-size:13.5px}
+.simu-extra{margin-top:14px;font-size:15px}
+.simu-extra a{color:var(--asfalto);font-weight:800}
+
+/* ===== Moto G2 ===== */
+.moto{background:var(--gris-fondo)}
+.moto-grid{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(32px,5vw,64px);align-items:center}
+.moto-foto{position:relative;max-width:460px;width:100%;margin:0 auto}
+.moto-foto img{width:100%;aspect-ratio:900/1020;object-fit:cover;border-radius:28px;border:6px solid var(--blanco);box-shadow:0 18px 40px rgba(21,20,26,.18)}
+.moto-cartel{position:absolute;right:-12px;bottom:28px;background:var(--rojo);color:#fff;font-family:var(--display);font-weight:900;font-size:30px;text-transform:uppercase;line-height:1;padding:12px 18px;border-radius:10px;box-shadow:0 8px 0 var(--rojo-sombra);display:flex;flex-direction:column;align-items:center;transform:rotate(-3deg)}
+.moto-cartel small{font-size:22px;font-weight:800;margin-top:4px}
+.moto-texto{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.moto-lead{font-size:clamp(17px,2.2vw,21px)}
+.moto-lista{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.moto-lista li{display:flex;gap:12px;align-items:flex-start;background:var(--blanco);border:1px solid var(--borde);border-radius:14px;padding:14px 16px;font-size:15.5px}
+.moto-lista svg{width:22px;height:22px;flex:none;color:var(--rojo);margin-top:1px}
+
+/* ===== Manual teórico ===== */
+.manual{background:var(--blanco)}
+.manual-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,5vw,64px);align-items:center}
+.manual-tapa{position:relative;display:block;max-width:420px;width:100%;margin:0 auto;border-radius:12px;overflow:hidden;box-shadow:0 22px 0 var(--asfalto),0 30px 50px rgba(21,20,26,.2);transform:rotate(-2deg);transition:transform .25s ease}
+.manual-tapa:hover{transform:rotate(0) translateY(-4px)}
+.manual-tapa img{width:100%;aspect-ratio:600/585;object-fit:cover}
+.manual-pdf{position:absolute;top:14px;right:14px;background:var(--rojo);color:#fff;font-family:var(--display);font-weight:900;font-size:20px;padding:4px 12px;border-radius:8px}
+.manual-texto{display:flex;flex-direction:column;gap:18px;align-items:flex-start}
+.manual-texto>p{font-size:clamp(16px,2.1vw,19px);max-width:560px}
+.manual-datos{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:12px}
+.manual-datos li{display:flex;flex-direction:column;background:var(--gris-fondo);border:1px solid var(--borde);border-radius:14px;padding:12px 18px;min-width:110px}
+.manual-datos b{font-family:var(--display);font-weight:900;font-size:28px;color:var(--rojo);line-height:1}
+.manual-datos span{font-size:13.5px;color:var(--texto-oscuro-suave)}
+.manual-nota{font-size:14px;color:var(--texto-oscuro-suave)}
+.manual-nota a{color:var(--rojo-osc);font-weight:700}
+.simu .btn-borde{color:var(--asfalto)}
+
+.planes{grid-template-columns:repeat(4,minmax(0,1fr))}
+.plan{padding:24px}
+.plan h3{font-size:28px}
+
+@media (max-width:1100px){ .menu a{padding:10px 8px;font-size:14.5px} .menu .btn{margin-left:4px} }
+@media (max-width:980px){
+  .moto-grid,.manual-grid{grid-template-columns:minmax(0,1fr)}
+  .planes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .plan-promo{grid-column:auto}
+}
+@media (max-width:640px){
+  .planes{grid-template-columns:minmax(0,1fr)}
+  .moto-cartel{right:-4px;font-size:24px}
+  .moto-cartel small{font-size:18px}
+  .manual-datos li{min-width:0;flex:1 1 90px;padding:10px 12px}
+  .manual-tapa{max-width:320px}
+}
+.menu a{white-space:nowrap}
+@media (min-width:981px) and (max-width:1280px){ .menu{gap:0} .menu a{padding:10px 9px;font-size:14.5px} .menu .btn{padding:0 16px;margin-left:6px} }
+@media (max-width:640px){
+  .dato b{font-size:22px}
+  .manual-datos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:8px}
+  .manual-datos b{font-size:22px}
+}

@@ -6,11 +6,13 @@ Sitio estático (HTML/CSS/JS, sin build ni dependencias).
 ```
 index.html          → página principal (promo 4+1, clases, coche escuela, aprobados, contacto)
 simulacro.html      → simulacro de examen teórico (30 preguntas, revisión, historial y ranking)
+test-conduccion-segura.html → test de conducción segura (25 preguntas propias basadas en la Guía Nacional)
 styles.css / script.js
 assets/
   images/            coche escuela, certificado ANDIPEC (cédula oculta), imagen para redes (og), ícono
   images/aprobados/  fotos de alumnos aprobados
   images/simulacro/  señales de tránsito del simulacro
+  docs/              Guía Nacional de Conducción (PDF)
 ```
 
 ## Datos pendientes del cliente (están marcados en index.html con comentarios)
