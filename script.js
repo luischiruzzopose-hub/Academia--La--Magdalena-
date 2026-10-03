@@ -76,30 +76,6 @@
     setTimeout(function () { requestAnimationFrame(paso); }, 300);
   });
 
-  /* ---------- Tarjeta de la promo 4 + 1 ---------- */
-  var slots = Array.prototype.slice.call(document.querySelectorAll('.slot'));
-  var msg = document.getElementById('msg-promo');
-  var marcadas = 0;
-  function pintar() {
-    slots.forEach(function (s) {
-      var on = Number(s.dataset.n) <= marcadas;
-      s.classList.toggle('on', on);
-      s.setAttribute('aria-pressed', on ? 'true' : 'false');
-    });
-    if (!msg) return;
-    if (marcadas === 0) msg.textContent = 'Tocá las clases para ver cómo llegás a la de regalo.';
-    else if (marcadas < 4) msg.textContent = 'Llevás ' + marcadas + ' de 4 clases. ¡Seguí así!';
-    else if (marcadas === 4) msg.textContent = '¡Listo! La próxima va por nuestra cuenta.';
-    else msg.textContent = '5ª clase gratis: seguís aprendiendo sin pagar.';
-  }
-  slots.forEach(function (s) {
-    s.addEventListener('click', function () {
-      var n = Number(s.dataset.n);
-      marcadas = (marcadas === n) ? n - 1 : n;
-      pintar();
-    });
-  });
-
   /* ---------- Carrusel de alumnos ---------- */
   var pista = document.getElementById('pista');
   var prev = document.getElementById('carr-prev');
