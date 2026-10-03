@@ -1,208 +1,416 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-UY">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>La Magdalena · Academia de Choferes | Tu camino empieza con nosotros</title>
-<meta name="description" content="Academia de Choferes La Magdalena. Clases de conducción Categoría A desde 2018. Promo: pagás 4 clases y la 5ª es gratis. Simulacro de examen teórico gratis. Tel. 095 380 690.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Academia de Choferes La Magdalena | Clases de conducir</title>
+<meta name="description" content="Aprendé a manejar con confianza en la Academia de Choferes La Magdalena: clases prácticas de auto, preparación para el examen y simulacro teórico gratis. Promo: pagás 4 clases y la 5ª es gratis.">
+<meta name="theme-color" content="#15141A">
+<link rel="canonical" href="https://academia-la-magdalena.vercel.app/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="Academia de Choferes La Magdalena">
+<meta property="og:title" content="Academia de Choferes La Magdalena | Clases de conducir">
+<meta property="og:description" content="Clases prácticas de manejo, preparación para el examen y simulacro teórico gratis. Pagás 4 clases de auto y la 5ª es gratis.">
+<meta property="og:url" content="https://academia-la-magdalena.vercel.app/">
+<meta property="og:image" content="https://academia-la-magdalena.vercel.app/assets/images/og-la-magdalena.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Coche escuela de la Academia de Choferes La Magdalena">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" type="image/png" href="assets/images/icono.png">
+<link rel="apple-touch-icon" href="assets/images/icono.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Archivo:wght@400;500;600;700&family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800;900&family=Archivo:wght@400;500;600;700;800&family=Yellowtail&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="assets/images/coche-escuela.webp" type="image/webp">
 <link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DrivingSchool","name":"Academia de Choferes La Magdalena","url":"https://academia-la-magdalena.vercel.app/","telephone":"+598 95 380 690","image":"https://academia-la-magdalena.vercel.app/assets/images/og-la-magdalena.jpg","foundingDate":"2018","slogan":"Tu camino empieza con nosotros."}
+</script>
 </head>
 <body>
+<a class="salto" href="#contenido">Saltar al contenido</a>
 
-<header class="nav">
-  <div class="contenedor">
-    <a href="#inicio" class="marca"><span class="octo">LM</span><span class="marca-texto"><span class="script">La Magdalena</span><small>Academia de choferes</small></span></a>
-    <nav class="nav-links" aria-label="Principal">
-      <a href="#promo">Promo</a>
+<header class="nav" id="nav">
+  <div class="contenedor nav-barra">
+    <a href="#inicio" class="marca" aria-label="La Magdalena, Academia de Choferes. Ir al inicio">
+      <span class="octo" aria-hidden="true">LM</span>
+      <span class="marca-texto"><span class="script">La Magdalena</span><small>Academia de choferes</small></span>
+    </a>
+    <button class="hamburguesa" id="btn-menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span></button>
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#inicio">Inicio</a>
       <a href="#clases">Clases</a>
+      <a href="#promo">Promoción</a>
       <a href="#simulacro">Simulacro</a>
-      <a href="#aprobados">Aprobados</a>
-      <a href="https://wa.me/59895380690" class="btn btn-rojo">Reservá tu clase</a>
+      <a href="#alumnos">Alumnos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." class="btn btn-rojo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar clase</a>
     </nav>
   </div>
 </header>
 
-<main>
+<main id="contenido">
+
+  <!-- ================= HERO ================= -->
   <section id="inicio" class="hero">
-    <div class="contenedor">
+    <div class="contenedor hero-grid">
       <div class="hero-texto">
-        <span class="pill"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Acompañando la educación vial desde 2018</span>
-        <h1 class="display">Tu camino<br>empieza<br><span>con nosotros.</span></h1>
-        <p>Aprendé a manejar de forma segura, responsable y con confianza, acompañado por instructores capacitados.</p>
+        <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Acompañando la educación vial desde 2018</span>
+        <h1>
+          <span class="h1-marca">Academia de Choferes <b>La Magdalena</b></span>
+          <span class="h1-frase">Aprendé a manejar con confianza y <em>preparate para tu examen.</em></span>
+        </h1>
+        <p class="hero-sub">Clases prácticas de auto en tránsito real, con instructor capacitado. Tu camino empieza con nosotros.</p>
         <div class="botones">
-          <a href="https://wa.me/59895380690" class="btn btn-amarillo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg>Escribinos por WhatsApp</a>
-          <a href="tel:+59895380690" class="btn btn-borde"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>095 380 690</a>
+          <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." class="btn btn-amarillo btn-grande" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar mi clase</a>
+          <a href="#promo" class="btn btn-borde btn-grande">Ver promoción</a>
+        </div>
+        <div class="hero-datos" aria-label="La Magdalena en datos">
+          <div class="dato"><b>2018</b><span>acompañando alumnos</span></div>
+          <div class="dato"><b>4 + 1</b><span>la 5ª clase es gratis</span></div>
+          <div class="dato"><b data-contar="30">30</b><span>preguntas en el simulacro</span></div>
         </div>
       </div>
       <div class="hero-foto">
-        <img src="assets/images/coche-escuela.jpg" alt="Coche escuela de La Magdalena">
-        <div class="sello-promo" aria-label="Super promo: pagás 4 clases y la 5ª es gratis"><div><span class="s1">Super promo</span><span class="s2">Pagás 4</span><span class="s3">la 5ª es</span><span class="s4">gratis</span></div></div>
+        <picture>
+          <source srcset="assets/images/coche-escuela.webp" type="image/webp">
+          <img src="assets/images/coche-escuela.jpg" width="1400" height="1027" alt="Coche escuela blanco de la Academia de Choferes La Magdalena" fetchpriority="high">
+        </picture>
+        <a class="sello-promo" href="#promo" aria-label="Ver promo: pagás 4 clases y la 5ª es gratis"><div><span class="s1">Promo</span><span class="s2">4+1</span><span class="s3">gratis</span></div></a>
       </div>
     </div>
-    <div class="hero-ruta"><div class="ruta-linea"></div></div>
+    <div class="hero-ruta" aria-hidden="true"><div class="ruta-linea"></div></div>
   </section>
 
-  <section id="promo" class="promo">
+  <!-- ================= PROMO ================= -->
+  <section id="promo" class="seccion promo">
     <div class="contenedor">
-      <div class="cabecera">
-        <div><span class="etiqueta">Super promo · solo clases de auto</span><h2 class="display">Pagás 4 clases<br>y la 5ª es <span>gratis</span></h2></div>
-        <p>Aprovechá la promoción y comenzá tu preparación con La Magdalena. Tocá las clases de tu tarjeta y mirá cómo llegás a la de regalo.</p>
+      <div class="promo-cabecera">
+        <div class="revelar">
+          <span class="chip-promo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22c4 0 7-2.7 7-7 0-3.5-2.5-6.2-4-8-.4 2-1.5 3.2-3 4 .3-3.4-1.4-6.2-4-9 0 4-5 6.5-5 13 0 4.3 3.4 7 9 7z"/></svg>Super promo · solo clases de auto</span>
+          <h2 class="display">Promo 4 <span class="mas">+</span> 1 gratis</h2>
+        </div>
+        <div class="promo-lado revelar">
+          <p class="promo-lead">Pagás 4 clases de auto y la 5ª es <b>gratis</b></p>
+          <p>Aprovechá la promoción y comenzá tu preparación con La Magdalena.</p>
+          <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20aprovechar%20la%20promo%204%20%2B%201%3A%20pago%204%20clases%20de%20auto%20y%20la%205%C2%AA%20es%20gratis." class="btn btn-rojo btn-grande" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Quiero aprovechar la promo</a>
+        </div>
       </div>
-      <div class="tarjeta-clases">
-        <div class="tarjeta-top"><span class="t">Tarjeta de clases</span><span class="script">La Magdalena</span></div>
+      <div class="tarjeta-clases revelar">
+        <div class="tarjeta-top"><span class="t">Tu tarjeta de clases</span><span class="script">La Magdalena</span></div>
         <div class="slots">
-          <button type="button" class="slot" data-n="1" aria-pressed="false" aria-label="Clase 1">
-            <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">1</span><span class="l">Pagás</span>
-          </button>
-          <button type="button" class="slot" data-n="2" aria-pressed="false" aria-label="Clase 2">
-            <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">2</span><span class="l">Pagás</span>
-          </button>
-          <button type="button" class="slot" data-n="3" aria-pressed="false" aria-label="Clase 3">
-            <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">3</span><span class="l">Pagás</span>
-          </button>
-          <button type="button" class="slot" data-n="4" aria-pressed="false" aria-label="Clase 4">
-            <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">4</span><span class="l">Pagás</span>
-          </button>
-          <button type="button" class="slot gratis" data-n="5" aria-pressed="false" aria-label="Clase 5 gratis">
-            <span class="check"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">5</span><span class="l">Gratis</span>
-          </button>
+            <button type="button" class="slot" data-n="1" aria-pressed="false" aria-label="Clase 1, pagás">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">1</span><span class="l">Pagás</span>
+            </button>
+            <button type="button" class="slot" data-n="2" aria-pressed="false" aria-label="Clase 2, pagás">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">2</span><span class="l">Pagás</span>
+            </button>
+            <button type="button" class="slot" data-n="3" aria-pressed="false" aria-label="Clase 3, pagás">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">3</span><span class="l">Pagás</span>
+            </button>
+            <button type="button" class="slot" data-n="4" aria-pressed="false" aria-label="Clase 4, pagás">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">4</span><span class="l">Pagás</span>
+            </button>
+            <button type="button" class="slot gratis" data-n="5" aria-pressed="false" aria-label="Clase 5, gratis">
+              <span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></span><span class="c">Clase</span><span class="n">5</span><span class="l">Gratis</span>
+            </button>
         </div>
         <div class="tarjeta-pie">
-          <span id="msg-promo" aria-live="polite">Tocá las clases para marcarlas.</span>
-          <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20la%20promo%20de%20clases%20de%20auto%20(pag%C3%A1s%204%20y%20la%205%C2%AA%20es%20gratis)" class="btn btn-negro">Quiero la promo</a>
+          <span class="msg" id="msg-promo" aria-live="polite">Tocá las clases para ver cómo llegás a la de regalo.</span>
+          <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20aprovechar%20la%20promo%204%20%2B%201%3A%20pago%204%20clases%20de%20auto%20y%20la%205%C2%AA%20es%20gratis." class="btn btn-negro" target="_blank" rel="noopener">Quiero la promo</a>
         </div>
       </div>
+      <p class="promo-condicion">Promoción válida para clases de auto. Consultá las condiciones por WhatsApp.</p>
     </div>
   </section>
 
-  <section class="seccion confianza">
+  <!-- ================= PRECIOS ================= -->
+  <section id="precios" class="seccion precios">
     <div class="contenedor">
-      <div class="col" style="gap:8px">
-        <span class="etiqueta">En el camino desde</span>
-        <span class="anio">2018</span>
-        <h2 class="display" style="margin-top:24px">Confianza, compromiso<br>y experiencia</h2>
+      <div class="intro revelar">
+        <span class="etiqueta">Precios</span>
+        <h2 class="display h2">Nuestras clases</h2>
+        <p class="suave">Escribinos y te pasamos los precios actualizados de cada opción.</p>
       </div>
-      <div class="col" style="padding-top:12px">
-        <p class="lead">Desde 2018 acompañamos a nuestros alumnos en el aprendizaje de una conducción segura y responsable.</p>
-        <p class="suave">Nuestro objetivo es que aprendas a manejar correctamente, ganes confianza al volante y llegues preparado para afrontar el tránsito y tu examen.</p>
-        <div class="pilares">
-          <div class="pilar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg><span>Confianza</span></div>
-          <div class="pilar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 11l3-3 3 2 4-4 3 3-6 6-3-2-3 3z"/><path d="M3 13l4 4"/></svg><span>Compromiso</span></div>
-          <div class="pilar"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#F2C230" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v6.5M4.5 15l5.3-1.8M19.5 15l-5.3-1.8"/></svg><span>Experiencia</span></div>
-        </div>
+      <div class="planes">
+          <article class="plan revelar">
+            
+            <h3>Clase individual</h3>
+            <p>Una clase práctica de manejo en el coche escuela.</p>
+            <!-- PRECIO: reemplazá "Consultar" por el precio real, por ejemplo: <b>$ 0000</b> -->
+            <div class="precio"><span>Precio:</span><b>Consultar</b></div>
+            <a class="btn btn-amarillo btn-bloque" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20consultar%20el%20precio%20de%3A%20Clase%20individual" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Consultar por WhatsApp</a>
+          </article>
+          <article class="plan plan-promo revelar">
+            <span class="marcador">Promo 4 + 1 gratis</span>
+            <h3>Pack de clases</h3>
+            <p>Varias clases para avanzar con continuidad. Consultá por la promo 4 + 1.</p>
+            <!-- PRECIO: reemplazá "Consultar" por el precio real, por ejemplo: <b>$ 0000</b> -->
+            <div class="precio"><span>Precio:</span><b>Consultar</b></div>
+            <a class="btn btn-negro btn-bloque" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20consultar%20el%20precio%20de%3A%20Pack%20de%20clases" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Consultar por WhatsApp</a>
+          </article>
+          <article class="plan revelar">
+            
+            <h3>Preparación para examen</h3>
+            <p>Clases enfocadas en llegar preparado al examen práctico.</p>
+            <!-- PRECIO: reemplazá "Consultar" por el precio real, por ejemplo: <b>$ 0000</b> -->
+            <div class="precio"><span>Precio:</span><b>Consultar</b></div>
+            <a class="btn btn-amarillo btn-bloque" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20consultar%20el%20precio%20de%3A%20Preparaci%C3%B3n%20para%20examen" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Consultar por WhatsApp</a>
+          </article>
       </div>
     </div>
   </section>
 
-  <div class="banda"><span>Formamos con responsabilidad</span><i>/</i><span>Clases 100% prácticas</span></div>
+  <!-- ================= POR QUÉ ================= -->
+  <section id="por-que" class="seccion porque">
+    <div class="contenedor">
+      <div class="intro revelar">
+        <span class="etiqueta">Confianza, compromiso y experiencia</span>
+        <h2 class="display h2">¿Por qué elegir La Magdalena?</h2>
+        <p style="color:var(--texto-suave)">Desde 2018 acompañamos a nuestros alumnos en el aprendizaje de una conducción segura y responsable.</p>
+      </div>
+      <div class="ventajas">
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="7" r="4"/><path d="M4 21v-1a6 6 0 0 1 6-6h4a6 6 0 0 1 6 6v1"/></svg></span><div><h3>Instructor capacitado</h3><p>Participó del curso de Formación Profesional de Instructores de ANDIPEC Uruguay.</p></div></article>
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 3v6.5M4.5 15l5.3-1.8M19.5 15l-5.3-1.8"/></svg></span><div><h3>Clases prácticas</h3><p>Clases 100% prácticas para que aprender sea más fácil.</p></div></article>
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="3"/><circle cx="12" cy="7" r="1.6"/><circle cx="12" cy="12" r="1.6"/><circle cx="12" cy="17" r="1.6"/></svg></span><div><h3>Manejo en tránsito real</h3><p>Practicás en la calle, con el tránsito de todos los días.</p></div></article>
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4h6v3H9z"/><path d="M7 5H5v16h14V5h-2"/><path d="M9 13l2 2 4-4"/></svg></span><div><h3>Preparación para examen</h3><p>Te preparamos para llegar al examen con confianza.</p></div></article>
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M10 17V7h3a3 3 0 0 1 0 6h-3"/></svg></span><div><h3>Práctica de estacionamiento</h3><p>Practicás las maniobras de estacionamiento hasta dominarlas.</p></div></article>
+          <article class="ventaja revelar"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg></span><div><h3>Seguridad vial</h3><p>Aprendés a manejar de forma segura y responsable.</p></div></article>
+      </div>
+    </div>
+  </section>
 
+  <div class="banda" aria-hidden="true"><span>Formamos con responsabilidad</span><i>/</i><span>Clases 100% prácticas</span></div>
+
+  <!-- ================= CLASES / RECORRIDO ================= -->
   <section id="clases" class="seccion clases">
-    <div class="contenedor">
-      <div class="col" style="flex-basis:360px;gap:20px">
+    <div class="contenedor clases-grid">
+      <div class="clases-lado revelar">
         <span class="cat">CATEGORÍA A</span>
-        <h2 class="display">Clases de<br>conducción</h2>
-        <p class="suave" style="max-width:440px">Clases prácticas para aprender a conducir, mejorar tu manejo y prepararte para obtener tu licencia. Este es el recorrido que hacemos juntos.</p>
-        <a href="https://wa.me/59895380690" class="btn btn-rojo" style="align-self:flex-start">Empezar el recorrido</a>
+        <h2 class="display h2">Tu recorrido de aprendizaje</h2>
+        <p>Clases prácticas para aprender a conducir, mejorar tu manejo y prepararte para obtener tu licencia. Este es el camino que hacemos juntos, paso a paso.</p>
+        <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." class="btn btn-rojo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar mi clase</a>
       </div>
-      <div class="recorrido">
-        <ol>
-            <li><span class="km"><small>KM</small><b>01</b></span><div><span class="t">Manejo en tránsito real</span></div></li>
-            <li><span class="km"><small>KM</small><b>02</b></span><div><span class="t">Señales y prioridades</span></div></li>
-            <li><span class="km"><small>KM</small><b>03</b></span><div><span class="t">Maniobras</span></div></li>
-            <li><span class="km"><small>KM</small><b>04</b></span><div><span class="t">Estacionamiento</span></div></li>
-            <li><span class="km"><small>KM</small><b>05</b></span><div><span class="t">Seguridad vial</span></div></li>
-            <li><span class="km"><small>KM</small><b>06</b></span><div><span class="t">Preparación para el examen</span><span class="meta">Meta: tu licencia</span></div></li>
-        </ol>
-      </div>
+      <ol class="recorrido">
+            <li class="paso revelar"><span class="num" aria-hidden="true">01</span><div class="cuerpo"><h3><span class="sr-only">Paso 1: </span>Primeras prácticas</h3><p>Conocé el vehículo y comenzá a ganar confianza.</p></div></li>
+            <li class="paso revelar"><span class="num" aria-hidden="true">02</span><div class="cuerpo"><h3><span class="sr-only">Paso 2: </span>Tránsito y prioridades</h3><p>Aprendé a desenvolverte correctamente en el tránsito.</p></div></li>
+            <li class="paso revelar"><span class="num" aria-hidden="true">03</span><div class="cuerpo"><h3><span class="sr-only">Paso 3: </span>Maniobras</h3><p>Practicá las principales maniobras de conducción.</p></div></li>
+            <li class="paso revelar"><span class="num" aria-hidden="true">04</span><div class="cuerpo"><h3><span class="sr-only">Paso 4: </span>Estacionamiento</h3><p>Aprendé y practicá las maniobras necesarias.</p></div></li>
+            <li class="paso revelar"><span class="num" aria-hidden="true">05</span><div class="cuerpo"><h3><span class="sr-only">Paso 5: </span>Seguridad vial</h3><p>Mejorá tu conducción y anticipación.</p></div></li>
+            <li class="paso meta revelar"><span class="num" aria-hidden="true">06</span><div class="cuerpo"><h3><span class="sr-only">Paso 6: </span>Preparación para el examen</h3><p>Llegá preparado y con mayor confianza.</p></div></li>
+      </ol>
     </div>
   </section>
 
-  <section id="simulacro" class="simu">
-    <div class="contenedor">
-      <div class="col" style="flex-basis:460px">
-        <span class="etiqueta" style="color:#8E1A1A">Gratis · desde tu celular</span>
-        <h2 class="display">Practicá el<br>examen teórico</h2>
-        <p>Hacé el simulacro antes de ir a rendir: 30 preguntas sobre señales, prioridades, alcohol, velocidad y más. Al terminar ves tu puntaje, la respuesta correcta de cada pregunta y su explicación.</p>
-        <ul class="simu-lista"><li>30 preguntas</li><li>Cronómetro</li><li>Revisión con explicaciones</li><li>Historial de puntajes</li></ul>
-        <div class="botones"><a href="simulacro.html" class="btn btn-negro">Hacer el simulacro</a></div>
+  <!-- ================= INSTRUCTOR ================= -->
+  <section id="instructor" class="seccion instructor">
+    <div class="contenedor instructor-grid">
+      <div class="revelar">
+        <span class="etiqueta">Conocé a tu instructor</span>
+        <h2 class="display h2">Detrás de cada clase hay una persona real</h2>
+        <div class="perfil">
+          <!-- FOTO DEL INSTRUCTOR: cuando tengas la foto, reemplazá "JG" por:
+               <img src="assets/images/instructor.jpg" alt="José Gómez, instructor de La Magdalena"> -->
+          <span class="avatar" aria-hidden="true">JG</span>
+          <div><h3>José Gómez</h3><p>Instructor de La Magdalena</p></div>
+        </div>
+        <div class="instructor-texto">
+          <p>Nuestro objetivo es que aprendas a manejar correctamente, ganes confianza al volante y llegues preparado para afrontar el tránsito y tu examen.</p>
+          <ul class="formacion-lista">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg><span>Participó del Curso Teórico y Práctico de <strong>Formación Profesional de Instructores de Escuelas de Conducir</strong>.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg><span>Dictado por <strong>ANDIPEC Uruguay</strong>, Asociación Nacional de Instructores y Propietarios de Escuelas de Conducir.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/></svg><span>Montevideo, 3 de junio de 2023.</span></li>
+          </ul>
+        </div>
       </div>
-      <div class="hoja" aria-hidden="true">
-        <span class="q">Pregunta de ejemplo · Estacionamiento</span>
+      <div class="revelar">
+        <button type="button" class="certificado" id="abrir-certificado" aria-label="Ampliar certificado de ANDIPEC de José Gómez">
+          <picture>
+            <source srcset="assets/images/certificado-andipec-720.webp 720w, assets/images/certificado-andipec.webp 1400w" sizes="(max-width:980px) 92vw, 560px" type="image/webp">
+            <img src="assets/images/certificado-andipec-720.jpg" width="720" height="528" alt="Certificado de ANDIPEC Uruguay: José Gómez participó del Curso Teórico y Práctico de Formación Profesional de Instructores de Escuelas de Conducir, Montevideo, 3 de junio de 2023" loading="lazy" decoding="async">
+          </picture>
+          <span class="ver"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4M11 8v6M8 11h6"/></svg>Ver certificado</span>
+        </button>
+        <p class="cert-nota">Certificado emitido por ANDIPEC Uruguay. Por privacidad, ocultamos el número de cédula.</p>
+      </div>
+    </div>
+    <dialog class="visor" id="visor-certificado" aria-label="Certificado de ANDIPEC">
+      <div class="visor-caja">
+        <button type="button" class="visor-cerrar" id="cerrar-certificado" aria-label="Cerrar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+        <picture>
+          <source srcset="assets/images/certificado-andipec.webp" type="image/webp">
+          <img src="assets/images/certificado-andipec.jpg" width="1400" height="1026" alt="Certificado de ANDIPEC Uruguay de José Gómez" loading="lazy">
+        </picture>
+      </div>
+    </dialog>
+  </section>
+
+  <!-- ================= SIMULACRO ================= -->
+  <section id="simulacro" class="seccion simu">
+    <div class="contenedor simu-grid">
+      <div class="revelar">
+        <span class="etiqueta">Gratis, desde tu celular</span>
+        <h2 class="display">¿Qué tan preparado estás?</h2>
+        <p class="simu-lead"><strong>Practicá con nuestro simulacro teórico</strong> antes de ir a rendir: señales, prioridades, alcohol, velocidad y más.</p>
+        <ul class="simu-lista"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.5 2.3c-.6.3-1 .9-1 1.6V14"/><path d="M12 17h.01"/></svg>30 preguntas</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M9 2h6"/></svg>Cronómetro</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v12H8l-4 4z"/><path d="M8 9h8M8 12h5"/></svg>Revisión de respuestas</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18h6M10 22h4"/><path d="M12 2a7 7 0 0 0-4 12.7V16h8v-1.3A7 7 0 0 0 12 2z"/></svg>Explicaciones</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></svg>Resultado final</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/></svg>Historial de puntajes</li></ul>
+        <a href="simulacro.html" class="btn btn-negro btn-grande">Comenzar simulacro</a>
+      </div>
+      <div class="hoja revelar" aria-hidden="true">
+        <div class="hoja-top"><span class="q">Pregunta 11 de 30 · Estacionamiento</span><span class="t">04:12</span></div>
+        <div class="hoja-barra"><i></i></div>
         <span class="p">Está terminantemente prohibido estacionar:</span>
         <span class="op"><b>A</b>En la mitad de la cuadra</span>
         <span class="op"><b>B</b>A menos de 10 metros de una señal de PARE o CEDA EL PASO</span>
         <span class="op"><b>C</b>En los canteros centrales</span>
         <span class="op ok"><b>D</b>Las respuestas B y C son correctas</span>
+        <span class="exp">Está prohibido estacionar a menos de 10 metros de una señal de PARE o CEDA EL PASO, y en los canteros centrales.</span>
       </div>
     </div>
   </section>
 
+  <!-- ================= COCHE ESCUELA ================= -->
   <section id="coche" class="seccion coche">
-    <div class="contenedor">
-      <div class="coche-foto"><img src="assets/images/coche-escuela.jpg" alt="Coche escuela blanco con los carteles de La Magdalena" loading="lazy"></div>
-      <div class="col">
-        <div class="cartel"><b>COCHE ESCUELA</b><small>Teléfono</small><span>095 380 690</span></div>
-        <p style="margin-top:8px">Practicás en un auto moderno y bien identificado, para que en la calle todos sepan que estás aprendiendo y te den espacio.</p>
-        <p style="font-size:18px;color:#4A4550">Clases 100% prácticas para que aprender sea más fácil.</p>
+    <div class="contenedor coche-grid">
+      <div class="coche-foto revelar">
+        <picture><source srcset="assets/images/coche-escuela.webp" type="image/webp"><img src="assets/images/coche-escuela.jpg" width="1400" height="1027" alt="Coche escuela de La Magdalena con sus carteles identificatorios" loading="lazy" decoding="async"></picture>
+      </div>
+      <div class="coche-texto revelar">
+        <div class="cartel"><b>Coche escuela</b><small>Teléfono</small><span>095 380 690</span></div>
+        <h2 class="sr-only">Nuestro coche escuela</h2>
+        <p>Practicás en un auto bien identificado, para que en la calle todos sepan que estás aprendiendo.</p>
+        <p>Clases 100% prácticas para que aprender sea más fácil.</p>
       </div>
     </div>
   </section>
 
-  <section id="aprobados" class="seccion aprobados">
+  <!-- ================= ALUMNOS ================= -->
+  <section id="alumnos" class="seccion alumnos">
     <div class="contenedor">
-      <div class="cabecera">
-        <h2 class="display">Ellos ya<br><span>están en camino</span></h2>
-        <p class="suave" style="max-width:380px">Alumnos de La Magdalena con el examen práctico aprobado, al lado del mismo auto en el que aprendieron.</p>
-      </div>
-      <div class="polaroids">
-          <figure><img src="assets/images/aprobados/alumno-1.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-2.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-3.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-4.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-5.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-6.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-7.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-          <figure><img src="assets/images/aprobados/alumno-8.jpg" alt="Alumno de La Magdalena con su examen práctico aprobado" loading="lazy"><figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption></figure>
-      </div>
-    </div>
-  </section>
-
-  <section class="formacion">
-    <div class="contenedor">
-      <span class="medalla"><svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5z"/><path d="M7 11v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"/><path d="M21 9v6"/></svg></span>
-      <div class="col"><b>Instructores capacitados</b><p class="suave" style="font-size:17px">Nuestro instructor realizó el curso teórico y práctico de Formación Profesional de Instructores de Escuelas de Conducir de ANDIPEC Uruguay (Asociación Nacional de Instructores y Propietarios de Escuelas de Conducir).</p></div>
-    </div>
-  </section>
-
-  <section id="contacto" class="seccion cta">
-    <div class="contenedor">
-      <div class="pare" aria-hidden="true"><div><span class="a">Pará</span><span class="b">de postergarlo</span></div></div>
-      <div class="col">
-        <h2 class="display">Tu próxima parada:<br><span>tu licencia.</span></h2>
-        <p>Consultas y reservas por WhatsApp o llamada. Pagás 4 clases de auto y la 5ª es gratis.</p>
-        <div class="botones">
-          <a href="https://wa.me/59895380690" class="btn btn-negro"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg>Reservar por WhatsApp</a>
-          <a href="tel:+59895380690" class="btn btn-borde">Llamar al 095 380 690</a>
+      <div class="alumnos-cab">
+        <div class="intro revelar">
+          <span class="etiqueta">Alumnos aprobados</span>
+          <h2 class="display h2">Ellos ya lo lograron</h2>
+          <p>Nuestros alumnos compartiendo el resultado de su esfuerzo.</p>
         </div>
+        <div class="carrusel-ctrl">
+          <button type="button" id="carr-prev" aria-label="Fotos anteriores"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button type="button" id="carr-next" aria-label="Fotos siguientes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+      </div>
+      <div class="pista" id="pista" tabindex="0" aria-label="Fotos de alumnos aprobados">
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-1.webp" type="image/webp"><img src="assets/images/aprobados/alumno-1.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-2.webp" type="image/webp"><img src="assets/images/aprobados/alumno-2.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-3.webp" type="image/webp"><img src="assets/images/aprobados/alumno-3.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-4.webp" type="image/webp"><img src="assets/images/aprobados/alumno-4.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-5.webp" type="image/webp"><img src="assets/images/aprobados/alumno-5.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-6.webp" type="image/webp"><img src="assets/images/aprobados/alumno-6.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-7.webp" type="image/webp"><img src="assets/images/aprobados/alumno-7.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+            <figure class="polaroid">
+              <picture><source srcset="assets/images/aprobados/alumno-8.webp" type="image/webp"><img src="assets/images/aprobados/alumno-8.jpg" width="600" height="800" alt="Alumno de La Magdalena mostrando su examen práctico aprobado junto al coche escuela" loading="lazy" decoding="async"></picture>
+              <figcaption><span class="script">La Magdalena</span><span class="apr">APROBADO</span></figcaption>
+            </figure>
+      </div>
+      <div class="puntos" id="puntos" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIOS (preparada, oculta hasta tener testimonios reales) =================
+       Para activarla: borrá el atributo "hidden" de la sección y reemplazá el texto y el nombre de cada tarjeta.
+       Si un alumno da permiso, podés poner "Nombre, aprobó en 2026". No publiques testimonios inventados. -->
+  <section id="testimonios" class="seccion testimonios" hidden>
+    <div class="contenedor">
+      <div class="intro">
+        <span class="etiqueta">Testimonios</span>
+        <h2 class="display h2">Lo que dicen nuestros alumnos</h2>
+      </div>
+      <div class="testimonios-grid">
+        <article class="testimonio"><blockquote><p>[Texto del testimonio 1]</p></blockquote><cite>[Nombre del alumno 1]</cite></article>
+        <article class="testimonio"><blockquote><p>[Texto del testimonio 2]</p></blockquote><cite>[Nombre del alumno 2]</cite></article>
+        <article class="testimonio"><blockquote><p>[Texto del testimonio 3]</p></blockquote><cite>[Nombre del alumno 3]</cite></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section id="faq" class="seccion faq">
+    <div class="contenedor faq-grid">
+      <div class="faq-lado revelar">
+        <span class="etiqueta">Preguntas frecuentes</span>
+        <h2 class="display h2">¿Tenés dudas?</h2>
+        <p>Si no encontrás tu respuesta, escribinos y te respondemos por WhatsApp.</p>
+        <a href="https://wa.me/59895380690?text=Hola%2C%20tengo%20una%20consulta%20sobre%20las%20clases." class="btn btn-rojo" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Hacer una consulta</a>
+      </div>
+      <div class="acordeon revelar">
+            <details open><summary>¿Cómo puedo reservar una clase?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Escribinos por <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." target="_blank" rel="noopener">WhatsApp</a> o llamanos al <a href="tel:+59895380690">095 380 690</a> y coordinamos tu clase.</p></div></details>
+            <details><summary>¿Dónde se realizan las clases?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Consultanos por <a href="https://wa.me/59895380690?text=Hola%2C%20quer%C3%ADa%20saber%20d%C3%B3nde%20se%20realizan%20las%20clases." target="_blank" rel="noopener">WhatsApp</a> y te damos todos los detalles.</p></div></details>
+            <details><summary>¿Cuánto dura cada clase?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Consultanos por <a href="https://wa.me/59895380690?text=Hola%2C%20quer%C3%ADa%20saber%20cu%C3%A1nto%20dura%20cada%20clase." target="_blank" rel="noopener">WhatsApp</a> y te contamos cómo se organizan las clases.</p></div></details>
+            <details><summary>¿Las clases son para principiantes?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Sí. Nuestras clases prácticas son para aprender a conducir, mejorar tu manejo y prepararte para obtener tu licencia.</p></div></details>
+            <details><summary>¿Puedo prepararme para el examen?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Sí. La preparación para el examen es parte del recorrido de clases, y además podés practicar el teórico gratis con nuestro <a href="simulacro.html">simulacro</a>.</p></div></details>
+            <details><summary>¿Cómo funciona la promoción 4 + 1?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Pagás 4 clases de auto y la 5ª es gratis. Para conocer el resto de las condiciones, consultanos por <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20saber%20m%C3%A1s%20sobre%20la%20promo%204%20%2B%201." target="_blank" rel="noopener">WhatsApp</a>.</p></div></details>
+            <details><summary>¿Cómo puedo consultar precios?<span class="mas" aria-hidden="true"></span></summary><div class="resp"><p>Escribinos por <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20consultar%20los%20precios%20de%20las%20clases." target="_blank" rel="noopener">WhatsApp</a> o llamanos al <a href="tel:+59895380690">095 380 690</a>.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACTO ================= -->
+  <section id="contacto" class="seccion contacto">
+    <div class="contenedor contacto-grid">
+      <div class="pare" aria-hidden="true"><div><span class="a">Pará</span><span class="b">de postergarlo</span></div></div>
+      <div class="revelar">
+        <h2 class="display">¿Listo para empezar?</h2>
+        <p class="lead">Reservá tu clase y comenzá a prepararte.</p>
+        <div class="canales">
+          <a class="canal" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." target="_blank" rel="noopener"><span class="ic"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg></span><span><small>WhatsApp</small><b>095 380 690</b></span></a>
+          <a class="canal" href="tel:+59895380690"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><span><small>Teléfono</small><b>095 380 690</b></span></a>
+          <!-- UBICACIÓN: cuando la tengas, descomentá y completá:
+          <a class="canal" href="https://maps.google.com/?q=DIRECCION" target="_blank" rel="noopener"><span class="ic">(ícono)</span><span><small>Ubicación</small><b>[Dirección]</b></span></a> -->
+          <!-- INSTAGRAM: cuando lo tengas, descomentá y completá:
+          <a class="canal" href="https://instagram.com/USUARIO" target="_blank" rel="noopener"><span class="ic">(ícono)</span><span><small>Instagram</small><b>@usuario</b></span></a> -->
+        </div>
+        <a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." class="btn btn-negro btn-grande" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar mi clase</a>
       </div>
     </div>
   </section>
 </main>
 
 <footer>
-  <div class="ruta-linea"></div>
+  <div class="ruta-linea" aria-hidden="true"></div>
   <div class="contenedor">
-    <div><span class="script">La Magdalena</span><p>Tu camino empieza con nosotros.</p></div>
-    <div class="der"><a href="tel:+59895380690" class="tel">095 380 690</a><p>Academia de choferes · Desde 2018 · <a href="simulacro.html">Simulacro teórico</a></p></div>
+    <div class="pie">
+      <div><span class="script">La Magdalena</span><p>Academia de Choferes. Acompañando la educación vial desde 2018.<br>Tu camino empieza con nosotros.</p></div>
+      <div><h3>Secciones</h3><ul><li><a href="#clases">Clases</a></li><li><a href="#promo">Promoción 4 + 1</a></li><li><a href="#precios">Precios</a></li><li><a href="#instructor">Instructor</a></li><li><a href="#faq">Preguntas frecuentes</a></li></ul></div>
+      <div><h3>Contacto</h3><ul><li><a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." target="_blank" rel="noopener">WhatsApp 095 380 690</a></li><li><a href="tel:+59895380690">Llamar al 095 380 690</a></li><li><a href="simulacro.html">Simulacro teórico</a></li></ul></div>
+    </div>
+    <p class="legal">© <span id="anio">2026</span> Academia de Choferes La Magdalena.</p>
   </div>
 </footer>
 
-<a href="https://wa.me/59895380690" class="wa-flotante" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.4 7.9L3 21l1.2-4.4A9 9 0 1 1 21 12z"/></svg></a>
+<a href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." class="wa-flotante" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.22 8.22 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg><span class="tip">¿Reservamos tu clase?</span></a>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
