@@ -456,3 +456,15 @@ footer .ruta-linea{background-color:#3A3842}
   .manual-datos{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;gap:8px}
   .manual-datos b{font-size:22px}
 }
+
+/* ===== Lista de tests ===== */
+.tests-lista{margin-top:clamp(40px,6vw,64px)}
+.tests-lista h3{font-family:var(--display);font-weight:900;font-size:clamp(28px,4vw,40px);text-transform:uppercase;line-height:1}
+.tests-lista>p{margin:6px 0 18px;color:var(--texto-oscuro-suave)}
+.tests-lista ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.tests-lista a{display:flex;flex-direction:column;gap:4px;height:100%;padding:16px 18px;border:2px solid var(--borde);border-radius:16px;background:var(--gris-fondo);color:var(--asfalto);text-decoration:none;transition:border-color .15s ease,transform .15s ease}
+.tests-lista a:hover{border-color:var(--rojo);transform:translateY(-2px)}
+.tests-lista b{font-family:var(--display);font-weight:900;font-size:22px;text-transform:uppercase;color:var(--rojo)}
+.tests-lista span{font-size:15px;color:var(--texto-oscuro-suave)}
+@media (max-width:980px){.tests-lista ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:640px){.tests-lista ul{grid-template-columns:minmax(0,1fr)}}

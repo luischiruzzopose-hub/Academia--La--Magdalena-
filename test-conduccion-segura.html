@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Test de conducción segura | Academia de Choferes La Magdalena</title>
-<meta name="description" content="Test gratuito de conducción segura: 25 preguntas sobre velocidad, prioridades, alcohol, seguridad del vehículo, peatones y motos, con la respuesta correcta y su explicación.">
+<meta name="description" content="Test de conducción segura: 25 preguntas gratis con corrección y explicaciones. Preguntas generales sobre velocidad, preferencias de paso, peatones, luces, alcohol, seguridad del vehículo y motos. Academia de Choferes La Magdalena.">
 <meta name="theme-color" content="#FFFFFF">
 <link rel="canonical" href="https://academia-la-magdalena.vercel.app/test-conduccion-segura.html">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_UY">
+<meta property="og:site_name" content="Academia de Choferes La Magdalena">
 <meta property="og:title" content="Test de conducción segura | La Magdalena">
 <meta property="og:description" content="25 preguntas con corrección y explicaciones. Gratis, desde tu celular.">
 <meta property="og:url" content="https://academia-la-magdalena.vercel.app/test-conduccion-segura.html">
@@ -84,53 +85,69 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
 @media (max-width:600px){.marca .txt{display:none}.preg{padding:16px}.btn{width:100%}.marca .script{font-size:23px}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}html{scroll-behavior:auto}}
 </style>
+<style>
+.mas-tests{margin-top:34px}
+.mas-tests h2{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size:clamp(30px,6vw,40px);line-height:1;margin:0 0 6px}
+.mas-tests>p{margin:0 0 16px;color:var(--suave)}
+.grilla-tests{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;list-style:none;margin:0;padding:0}
+.tarj-test{display:flex;flex-direction:column;gap:6px;height:100%;padding:18px;border:2px solid var(--borde);border-radius:16px;background:#fff;color:var(--asfalto);text-decoration:none;transition:border-color .15s ease,transform .15s ease}
+a.tarj-test:hover{border-color:var(--rojo);transform:translateY(-2px)}
+.tarj-test .n{font-family:var(--display);font-weight:900;font-size:15px;letter-spacing:.5px;text-transform:uppercase;color:var(--rojo-osc)}
+.tarj-test strong{font-size:17px;line-height:1.25}
+.tarj-test span.d{font-size:14px;color:var(--suave)}
+.tarj-test .ir{margin-top:auto;padding-top:6px;font-weight:800;font-size:14px;color:var(--rojo)}
+.tarj-test.actual{background:var(--fondo);border-style:dashed}
+.tarj-test.actual .ir{color:var(--suave)}
+@media (max-width:600px){.grilla-tests{grid-template-columns:minmax(0,1fr)}}
+</style>
 </head>
 <body>
 <header class="barra">
   <div class="barra-in">
-    <a href="index.html#teorico" class="marca" aria-label="Volver a La Magdalena"><span aria-hidden="true">←</span><span class="octo" aria-hidden="true">LM</span><span class="script">La Magdalena</span></a>
+    <a href="index.html#teorico" class="marca" aria-label="Volver a la Academia de Choferes La Magdalena"><span aria-hidden="true">←</span><span class="octo" aria-hidden="true">LM</span><span class="script">La Magdalena</span></a>
     <span class="progreso" id="progreso" aria-live="polite">0 de 25 respondidas</span>
   </div>
   <div class="barra-prog" aria-hidden="true"><i id="barra"></i></div>
 </header>
 <main>
   <section class="intro">
-    <span class="script">La Magdalena</span>
+    <span class="script">Academia La Magdalena</span>
+    <span class="cat" style="margin-top:8px">Test principal</span>
     <h1>Test de conducción segura</h1>
-    <p>Respondé las 25 preguntas y tocá <strong>Corregir test</strong>. Vas a ver tu puntaje, la respuesta correcta de cada pregunta y por qué.</p>
-    <p>Todas las respuestas están basadas en la Guía Nacional de Conducción.</p>
-    <div class="chips"><span>25 preguntas</span><span>Auto y moto</span><span>Con explicaciones</span><span>Gratis</span></div>
+    <p>Preguntas generales sobre velocidad, preferencias de paso, peatones, luces, alcohol, seguridad del vehículo y motos.</p>
+    <p>Respondé las 25 preguntas y tocá <strong>Corregir test</strong>. Vas a ver tu puntaje, la respuesta correcta de cada pregunta y por qué. Todas las respuestas están basadas en la Guía Nacional de Conducción.</p>
+    <div class="chips"><span>25 preguntas</span><span>Con explicaciones</span><span>Gratis</span></div>
   </section>
 
   <div id="resultado" hidden></div>
 
   <form id="test" novalidate>
-      <fieldset class="preg" id="p0" data-r="0">
+      <fieldset class="preg" id="p0" data-r="3">
         <legend><span class="num">1</span><span class="cat">Velocidad</span>Si no hay ninguna señal que indique otra cosa, ¿cuál es la velocidad máxima para circular en zona urbana?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p0" value="0"><b>A</b><span>45 km/h</span></label>
-          <label class="op"><input type="radio" name="p0" value="1"><b>B</b><span>30 km/h</span></label>
-          <label class="op"><input type="radio" name="p0" value="2"><b>C</b><span>60 km/h</span></label>
-          <label class="op"><input type="radio" name="p0" value="3"><b>D</b><span>75 km/h</span></label>
+          <label class="op"><input type="radio" name="p0" value="0"><b>A</b><span>75 km/h</span></label>
+          <label class="op"><input type="radio" name="p0" value="1"><b>B</b><span>60 km/h</span></label>
+          <label class="op"><input type="radio" name="p0" value="2"><b>C</b><span>30 km/h</span></label>
+          <label class="op"><input type="radio" name="p0" value="3"><b>D</b><span>45 km/h</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La velocidad máxima en zona urbana es de 45 km/h. Las excepciones, más altas o más bajas, siempre están señalizadas.</p>
       </fieldset>
-      <fieldset class="preg" id="p1" data-r="0">
+      <fieldset class="preg" id="p1" data-r="1">
         <legend><span class="num">2</span><span class="cat">Prioridades</span>Llegás a una intersección sin semáforo ni carteles. ¿Quién tiene la preferencia de paso?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p1" value="0"><b>A</b><span>El vehículo que viene por la derecha</span></label>
-          <label class="op"><input type="radio" name="p1" value="1"><b>B</b><span>El vehículo que llega primero</span></label>
-          <label class="op"><input type="radio" name="p1" value="2"><b>C</b><span>El vehículo que viene por la izquierda</span></label>
-          <label class="op"><input type="radio" name="p1" value="3"><b>D</b><span>El vehículo más grande</span></label>
+          <label class="op"><input type="radio" name="p1" value="0"><b>A</b><span>El vehículo más grande</span></label>
+          <label class="op"><input type="radio" name="p1" value="1"><b>B</b><span>El vehículo que viene por la derecha</span></label>
+          <label class="op"><input type="radio" name="p1" value="2"><b>C</b><span>El vehículo que llega primero</span></label>
+          <label class="op"><input type="radio" name="p1" value="3"><b>D</b><span>El vehículo que viene por la izquierda</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> En una intersección no regulada tiene preferencia el vehículo que se aproxima por la derecha.</p>
       </fieldset>
-      <fieldset class="preg" id="p2" data-r="2">
+      <fieldset class="preg" id="p2" data-r="0">
         <legend><span class="num">3</span><span class="cat">Prioridades</span>¿En qué caso NO se aplica la regla de “el que viene por la derecha tiene preferencia”?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p2" value="0"><b>A</b><span>Cuando el otro vehículo es una moto</span></label>
+          <label class="op"><input type="radio" name="p2" value="0"><b>A</b><span>Cuando el cruce tiene carteles de PARE o CEDA EL PASO</span></label>
           <label class="op"><input type="radio" name="p2" value="1"><b>B</b><span>Cuando es de noche</span></label>
-          <label class="op"><input type="radio" name="p2" value="2"><b>C</b><span>Cuando el cruce tiene carteles de PARE o CEDA EL PASO</span></label>
+          <label class="op"><input type="radio" name="p2" value="2"><b>C</b><span>Cuando el otro vehículo es una moto</span></label>
           <label class="op"><input type="radio" name="p2" value="3"><b>D</b><span>Siempre se aplica, sin excepciones</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Cuando la preferencia está determinada por los carteles de PARE o CEDA EL PASO, no rige la regla de la derecha (Ley 18.191, art. 17).</p>
@@ -138,19 +155,19 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
       <fieldset class="preg" id="p3" data-r="1">
         <legend><span class="num">4</span><span class="cat">Peatones</span>En los cruces o pasos destinados a peatones:</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p3" value="0"><b>A</b><span>El peatón tiene preferencia solo si va con niños</span></label>
+          <label class="op"><input type="radio" name="p3" value="0"><b>A</b><span>Tiene preferencia el vehículo si va despacio</span></label>
           <label class="op"><input type="radio" name="p3" value="1"><b>B</b><span>Todo conductor debe dar preferencia de paso al peatón</span></label>
           <label class="op"><input type="radio" name="p3" value="2"><b>C</b><span>Tiene preferencia el que llegue primero</span></label>
-          <label class="op"><input type="radio" name="p3" value="3"><b>D</b><span>Tiene preferencia el vehículo si va despacio</span></label>
+          <label class="op"><input type="radio" name="p3" value="3"><b>D</b><span>El peatón tiene preferencia solo si va con niños</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Todo conductor debe dar preferencia de paso a los peatones en los cruces o pasos reglamentarios destinados a ellos (Ley 18.191, art. 7).</p>
       </fieldset>
-      <fieldset class="preg" id="p4" data-r="2">
+      <fieldset class="preg" id="p4" data-r="0">
         <legend><span class="num">5</span><span class="cat">Luces</span>Según la Ley 18.191, ¿qué luces debe llevar encendidas en forma permanente todo vehículo automotor?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p4" value="0"><b>A</b><span>Luces de posición</span></label>
+          <label class="op"><input type="radio" name="p4" value="0"><b>A</b><span>Luces bajas (cortas)</span></label>
           <label class="op"><input type="radio" name="p4" value="1"><b>B</b><span>Solo de noche, cualquier luz</span></label>
-          <label class="op"><input type="radio" name="p4" value="2"><b>C</b><span>Luces bajas (cortas)</span></label>
+          <label class="op"><input type="radio" name="p4" value="2"><b>C</b><span>Luces de posición</span></label>
           <label class="op"><input type="radio" name="p4" value="3"><b>D</b><span>Luces altas (largas)</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Es obligatorio el uso de las luces bajas (cortas) encendidas de forma permanente (Ley 18.191, art. 30).</p>
@@ -159,28 +176,28 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
         <legend><span class="num">6</span><span class="cat">Seguridad del vehículo</span>¿Cuál de estos grupos corresponde a elementos de seguridad ACTIVA?</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p5" value="0"><b>A</b><span>Frenos, neumáticos y luces</span></label>
-          <label class="op"><input type="radio" name="p5" value="1"><b>B</b><span>Sistemas de retención infantil</span></label>
+          <label class="op"><input type="radio" name="p5" value="1"><b>B</b><span>Cinturón, airbag y apoyacabezas</span></label>
           <label class="op"><input type="radio" name="p5" value="2"><b>C</b><span>Casco y carrocería</span></label>
-          <label class="op"><input type="radio" name="p5" value="3"><b>D</b><span>Cinturón, airbag y apoyacabezas</span></label>
+          <label class="op"><input type="radio" name="p5" value="3"><b>D</b><span>Sistemas de retención infantil</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La seguridad activa ayuda a evitar el siniestro: neumáticos, frenos, ABS, luces, suspensión, dirección, espejos, limpiaparabrisas, entre otros.</p>
       </fieldset>
-      <fieldset class="preg" id="p6" data-r="2">
+      <fieldset class="preg" id="p6" data-r="3">
         <legend><span class="num">7</span><span class="cat">Seguridad del vehículo</span>¿Cuál de estos grupos corresponde a elementos de seguridad PASIVA?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p6" value="0"><b>A</b><span>Frenos y ABS</span></label>
-          <label class="op"><input type="radio" name="p6" value="1"><b>B</b><span>Espejos y limpiaparabrisas</span></label>
-          <label class="op"><input type="radio" name="p6" value="2"><b>C</b><span>Cinturón de seguridad, airbag y apoyacabezas</span></label>
-          <label class="op"><input type="radio" name="p6" value="3"><b>D</b><span>Dirección y suspensión</span></label>
+          <label class="op"><input type="radio" name="p6" value="0"><b>A</b><span>Dirección y suspensión</span></label>
+          <label class="op"><input type="radio" name="p6" value="1"><b>B</b><span>Frenos y ABS</span></label>
+          <label class="op"><input type="radio" name="p6" value="2"><b>C</b><span>Espejos y limpiaparabrisas</span></label>
+          <label class="op"><input type="radio" name="p6" value="3"><b>D</b><span>Cinturón de seguridad, airbag y apoyacabezas</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La seguridad pasiva reduce los daños cuando el siniestro es inevitable: cinturones, sistemas de retención, airbags, apoyacabezas, carrocería y chasis, y casco.</p>
       </fieldset>
-      <fieldset class="preg" id="p7" data-r="1">
+      <fieldset class="preg" id="p7" data-r="2">
         <legend><span class="num">8</span><span class="cat">Tiempo de reacción</span>Si aumentás la velocidad, ¿qué pasa con el tiempo de reacción y la distancia recorrida en ese tiempo?</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p7" value="0"><b>A</b><span>El tiempo de reacción aumenta y la distancia baja</span></label>
-          <label class="op"><input type="radio" name="p7" value="1"><b>B</b><span>El tiempo de reacción no cambia, pero la distancia recorrida aumenta</span></label>
-          <label class="op"><input type="radio" name="p7" value="2"><b>C</b><span>El tiempo de reacción baja y la distancia también</span></label>
+          <label class="op"><input type="radio" name="p7" value="1"><b>B</b><span>El tiempo de reacción baja y la distancia también</span></label>
+          <label class="op"><input type="radio" name="p7" value="2"><b>C</b><span>El tiempo de reacción no cambia, pero la distancia recorrida aumenta</span></label>
           <label class="op"><input type="radio" name="p7" value="3"><b>D</b><span>Los dos se mantienen iguales</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La velocidad no afecta el tiempo de reacción, pero sí la distancia que el vehículo recorre durante ese tiempo.</p>
@@ -188,19 +205,19 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
       <fieldset class="preg" id="p8" data-r="3">
         <legend><span class="num">9</span><span class="cat">Tiempo de reacción</span>¿Cuáles de estos factores afectan tu capacidad de reacción?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p8" value="0"><b>A</b><span>Las comidas abundantes y la falta de atención</span></label>
-          <label class="op"><input type="radio" name="p8" value="1"><b>B</b><span>La fatiga y el sueño</span></label>
-          <label class="op"><input type="radio" name="p8" value="2"><b>C</b><span>El alcohol y algunos medicamentos</span></label>
+          <label class="op"><input type="radio" name="p8" value="0"><b>A</b><span>El alcohol y algunos medicamentos</span></label>
+          <label class="op"><input type="radio" name="p8" value="1"><b>B</b><span>Las comidas abundantes y la falta de atención</span></label>
+          <label class="op"><input type="radio" name="p8" value="2"><b>C</b><span>La fatiga y el sueño</span></label>
           <label class="op"><input type="radio" name="p8" value="3"><b>D</b><span>Todas son correctas</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Afectan la capacidad de reacción la fatiga, el sueño, el alcohol, las drogas, la falta de atención, determinados medicamentos y las comidas abundantes y pesadas.</p>
       </fieldset>
-      <fieldset class="preg" id="p9" data-r="2">
+      <fieldset class="preg" id="p9" data-r="1">
         <legend><span class="num">10</span><span class="cat">Alcohol</span>Sobre el alcohol y la conducción, es correcto afirmar que:</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p9" value="0"><b>A</b><span>Solo afecta si se toma con el estómago vacío</span></label>
-          <label class="op"><input type="radio" name="p9" value="1"><b>B</b><span>El café elimina sus efectos</span></label>
-          <label class="op"><input type="radio" name="p9" value="2"><b>C</b><span>El alcohol, a cualquier concentración en sangre, no es compatible con conducir</span></label>
+          <label class="op"><input type="radio" name="p9" value="0"><b>A</b><span>El café elimina sus efectos</span></label>
+          <label class="op"><input type="radio" name="p9" value="1"><b>B</b><span>El alcohol, a cualquier concentración en sangre, no es compatible con conducir</span></label>
+          <label class="op"><input type="radio" name="p9" value="2"><b>C</b><span>Solo afecta si se toma con el estómago vacío</span></label>
           <label class="op"><input type="radio" name="p9" value="3"><b>D</b><span>Un poco de alcohol no afecta a conductores con experiencia</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> El alcohol, a cualquier concentración en sangre, no es compatible con la conducción de vehículos.</p>
@@ -209,28 +226,28 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
         <legend><span class="num">11</span><span class="cat">Alcohol</span>Los efectos del alcohol en una persona dependen de:</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p10" value="0"><b>A</b><span>El tipo de bebida y la rapidez con que se toma</span></label>
-          <label class="op"><input type="radio" name="p10" value="1"><b>B</b><span>Lo que se haya comido</span></label>
-          <label class="op"><input type="radio" name="p10" value="2"><b>C</b><span>El peso, el sexo y la edad</span></label>
+          <label class="op"><input type="radio" name="p10" value="1"><b>B</b><span>El peso, el sexo y la edad</span></label>
+          <label class="op"><input type="radio" name="p10" value="2"><b>C</b><span>Lo que se haya comido</span></label>
           <label class="op"><input type="radio" name="p10" value="3"><b>D</b><span>Todas son correctas</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Dependen de muchos factores: tipo de bebida, rapidez de la ingesta, alimentos, peso, grasa corporal, sexo, edad, estado del hígado y sensibilidad personal, entre otros.</p>
       </fieldset>
-      <fieldset class="preg" id="p11" data-r="3">
+      <fieldset class="preg" id="p11" data-r="1">
         <legend><span class="num">12</span><span class="cat">Distracciones</span>Sobre el uso del celular mientras conducís:</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p11" value="0"><b>A</b><span>Solo está prohibido en ruta</span></label>
-          <label class="op"><input type="radio" name="p11" value="1"><b>B</b><span>Está permitido si es con manos libres, porque no distrae</span></label>
-          <label class="op"><input type="radio" name="p11" value="2"><b>C</b><span>Se puede usar en los semáforos largos</span></label>
-          <label class="op"><input type="radio" name="p11" value="3"><b>D</b><span>Está prohibido, y el manos libres igualmente distrae la atención</span></label>
+          <label class="op"><input type="radio" name="p11" value="1"><b>B</b><span>Está prohibido, y el manos libres igualmente distrae la atención</span></label>
+          <label class="op"><input type="radio" name="p11" value="2"><b>C</b><span>Está permitido si es con manos libres, porque no distrae</span></label>
+          <label class="op"><input type="radio" name="p11" value="3"><b>D</b><span>Se puede usar en los semáforos largos</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Está prohibido usar el celular mientras se conduce, y el sistema manos libres igualmente distrae y aumenta la probabilidad de un siniestro.</p>
       </fieldset>
-      <fieldset class="preg" id="p12" data-r="2">
+      <fieldset class="preg" id="p12" data-r="1">
         <legend><span class="num">13</span><span class="cat">Neumáticos</span>¿Cuándo se debe controlar la presión de los neumáticos?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p12" value="0"><b>A</b><span>Una vez al año</span></label>
-          <label class="op"><input type="radio" name="p12" value="1"><b>B</b><span>Después de un viaje largo, en caliente</span></label>
-          <label class="op"><input type="radio" name="p12" value="2"><b>C</b><span>Con los neumáticos fríos</span></label>
+          <label class="op"><input type="radio" name="p12" value="0"><b>A</b><span>Después de un viaje largo, en caliente</span></label>
+          <label class="op"><input type="radio" name="p12" value="1"><b>B</b><span>Con los neumáticos fríos</span></label>
+          <label class="op"><input type="radio" name="p12" value="2"><b>C</b><span>Una vez al año</span></label>
           <label class="op"><input type="radio" name="p12" value="3"><b>D</b><span>Solo cuando se ven desinflados</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> El control de la presión debe hacerse con los neumáticos fríos. Ante la duda, consultá el manual del fabricante.</p>
@@ -245,73 +262,73 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Circular con presión baja o excesiva provoca un desgaste desparejo que acorta la vida útil de los neumáticos.</p>
       </fieldset>
-      <fieldset class="preg" id="p14" data-r="3">
+      <fieldset class="preg" id="p14" data-r="1">
         <legend><span class="num">15</span><span class="cat">Niños</span>¿Dónde se debe colocar el sistema de retención infantil (sillita)?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p14" value="0"><b>A</b><span>En el asiento del acompañante</span></label>
-          <label class="op"><input type="radio" name="p14" value="1"><b>B</b><span>En cualquier asiento con cinturón</span></label>
-          <label class="op"><input type="radio" name="p14" value="2"><b>C</b><span>Depende del tamaño del auto</span></label>
-          <label class="op"><input type="radio" name="p14" value="3"><b>D</b><span>En el asiento trasero</span></label>
+          <label class="op"><input type="radio" name="p14" value="0"><b>A</b><span>En cualquier asiento con cinturón</span></label>
+          <label class="op"><input type="radio" name="p14" value="1"><b>B</b><span>En el asiento trasero</span></label>
+          <label class="op"><input type="radio" name="p14" value="2"><b>C</b><span>En el asiento del acompañante</span></label>
+          <label class="op"><input type="radio" name="p14" value="3"><b>D</b><span>Depende del tamaño del auto</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> El lugar para colocar un sistema de retención infantil es el asiento trasero.</p>
       </fieldset>
-      <fieldset class="preg" id="p15" data-r="0">
+      <fieldset class="preg" id="p15" data-r="2">
         <legend><span class="num">16</span><span class="cat">Niños</span>¿Hasta cuándo debe viajar un bebé en su sillita mirando hacia atrás?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p15" value="0"><b>A</b><span>Hasta cumplir un año de edad y/o pesar 10 kg</span></label>
+          <label class="op"><input type="radio" name="p15" value="0"><b>A</b><span>No es necesario que mire hacia atrás</span></label>
           <label class="op"><input type="radio" name="p15" value="1"><b>B</b><span>Hasta que aprenda a caminar</span></label>
-          <label class="op"><input type="radio" name="p15" value="2"><b>C</b><span>No es necesario que mire hacia atrás</span></label>
+          <label class="op"><input type="radio" name="p15" value="2"><b>C</b><span>Hasta cumplir un año de edad y/o pesar 10 kg</span></label>
           <label class="op"><input type="radio" name="p15" value="3"><b>D</b><span>Hasta los 3 meses</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Un niño debe viajar en un sistema de retención mirando hacia atrás hasta cumplir un año de edad y/o pesar 10 kg.</p>
       </fieldset>
-      <fieldset class="preg" id="p16" data-r="0">
+      <fieldset class="preg" id="p16" data-r="3">
         <legend><span class="num">17</span><span class="cat">Motos</span>Para quien conduce una moto, ¿cuál es la pieza más importante de su equipo de seguridad pasiva?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p16" value="0"><b>A</b><span>El casco</span></label>
+          <label class="op"><input type="radio" name="p16" value="0"><b>A</b><span>Los guantes</span></label>
           <label class="op"><input type="radio" name="p16" value="1"><b>B</b><span>La campera</span></label>
           <label class="op"><input type="radio" name="p16" value="2"><b>C</b><span>Las botas</span></label>
-          <label class="op"><input type="radio" name="p16" value="3"><b>D</b><span>Los guantes</span></label>
+          <label class="op"><input type="radio" name="p16" value="3"><b>D</b><span>El casco</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> El casco es la pieza más importante: absorbe el impacto y, según diversos estudios, reduce hasta en un 29% la probabilidad de morir en un siniestro.</p>
       </fieldset>
-      <fieldset class="preg" id="p17" data-r="3">
+      <fieldset class="preg" id="p17" data-r="2">
         <legend><span class="num">18</span><span class="cat">Peatones</span>Un peatón es atropellado por un vehículo a 30 km/h o menos. ¿Qué probabilidad tiene de sobrevivir, aproximadamente?</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p17" value="0"><b>A</b><span>50%</span></label>
-          <label class="op"><input type="radio" name="p17" value="1"><b>B</b><span>Es igual a cualquier velocidad</span></label>
-          <label class="op"><input type="radio" name="p17" value="2"><b>C</b><span>10%</span></label>
-          <label class="op"><input type="radio" name="p17" value="3"><b>D</b><span>90%</span></label>
+          <label class="op"><input type="radio" name="p17" value="1"><b>B</b><span>10%</span></label>
+          <label class="op"><input type="radio" name="p17" value="2"><b>C</b><span>90%</span></label>
+          <label class="op"><input type="radio" name="p17" value="3"><b>D</b><span>Es igual a cualquier velocidad</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Tiene alrededor de 90% de probabilidad de sobrevivir a 30 km/h o menos, y menos del 50% si el vehículo circula a 45 km/h o más.</p>
       </fieldset>
-      <fieldset class="preg" id="p18" data-r="3">
+      <fieldset class="preg" id="p18" data-r="1">
         <legend><span class="num">19</span><span class="cat">Circulación</span>¿Cómo se circula en una rotonda, salvo que haya señales que indiquen otra cosa?</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p18" value="0"><b>A</b><span>Por la izquierda, dejando la rotonda a la derecha</span></label>
-          <label class="op"><input type="radio" name="p18" value="1"><b>B</b><span>Por el centro</span></label>
+          <label class="op"><input type="radio" name="p18" value="1"><b>B</b><span>Por la derecha, dejando la rotonda a la izquierda</span></label>
           <label class="op"><input type="radio" name="p18" value="2"><b>C</b><span>Por donde haya menos tránsito</span></label>
-          <label class="op"><input type="radio" name="p18" value="3"><b>D</b><span>Por la derecha, dejando la rotonda a la izquierda</span></label>
+          <label class="op"><input type="radio" name="p18" value="3"><b>D</b><span>Por el centro</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Al enfrentarse a una rotonda se circula por la derecha, dejando el obstáculo a la izquierda, salvo que haya dispositivos que indiquen lo contrario.</p>
       </fieldset>
-      <fieldset class="preg" id="p19" data-r="1">
+      <fieldset class="preg" id="p19" data-r="2">
         <legend><span class="num">20</span><span class="cat">Circulación</span>En la ruta, la banquina:</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p19" value="0"><b>A</b><span>Se puede usar libremente de noche</span></label>
-          <label class="op"><input type="radio" name="p19" value="1"><b>B</b><span>Solo se usa para detenerse en caso de emergencia</span></label>
-          <label class="op"><input type="radio" name="p19" value="2"><b>C</b><span>Se usa para circular si vas despacio</span></label>
-          <label class="op"><input type="radio" name="p19" value="3"><b>D</b><span>Se puede usar para adelantar</span></label>
+          <label class="op"><input type="radio" name="p19" value="0"><b>A</b><span>Se usa para circular si vas despacio</span></label>
+          <label class="op"><input type="radio" name="p19" value="1"><b>B</b><span>Se puede usar para adelantar</span></label>
+          <label class="op"><input type="radio" name="p19" value="2"><b>C</b><span>Solo se usa para detenerse en caso de emergencia</span></label>
+          <label class="op"><input type="radio" name="p19" value="3"><b>D</b><span>Se puede usar libremente de noche</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La circulación por la banquina está prohibida; solo debe usarse para detenerse en caso de emergencia.</p>
       </fieldset>
-      <fieldset class="preg" id="p20" data-r="1">
+      <fieldset class="preg" id="p20" data-r="0">
         <legend><span class="num">21</span><span class="cat">Señales</span>Si tu vehículo no tiene señalero, ¿qué indica el brazo extendido en forma horizontal?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p20" value="0"><b>A</b><span>Que vas a detenerte</span></label>
-          <label class="op"><input type="radio" name="p20" value="1"><b>B</b><span>Que vas a doblar a la izquierda</span></label>
-          <label class="op"><input type="radio" name="p20" value="2"><b>C</b><span>Que vas a doblar a la derecha</span></label>
-          <label class="op"><input type="radio" name="p20" value="3"><b>D</b><span>Que dejás pasar al de atrás</span></label>
+          <label class="op"><input type="radio" name="p20" value="0"><b>A</b><span>Que vas a doblar a la izquierda</span></label>
+          <label class="op"><input type="radio" name="p20" value="1"><b>B</b><span>Que vas a doblar a la derecha</span></label>
+          <label class="op"><input type="radio" name="p20" value="2"><b>C</b><span>Que dejás pasar al de atrás</span></label>
+          <label class="op"><input type="radio" name="p20" value="3"><b>D</b><span>Que vas a detenerte</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Brazo horizontal: doblar a la izquierda. Brazo levantado: doblar a la derecha. Brazo hacia abajo: detenerse.</p>
       </fieldset>
@@ -320,17 +337,17 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
         <div class="ops">
           <label class="op"><input type="radio" name="p21" value="0"><b>A</b><span>Darle preferencia de paso</span></label>
           <label class="op"><input type="radio" name="p21" value="1"><b>B</b><span>Acelerar para no obstaculizarlo</span></label>
-          <label class="op"><input type="radio" name="p21" value="2"><b>C</b><span>Detenerte en el medio de la calle</span></label>
-          <label class="op"><input type="radio" name="p21" value="3"><b>D</b><span>Seguir igual si tenés luz verde</span></label>
+          <label class="op"><input type="radio" name="p21" value="2"><b>C</b><span>Seguir igual si tenés luz verde</span></label>
+          <label class="op"><input type="radio" name="p21" value="3"><b>D</b><span>Detenerte en el medio de la calle</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Los vehículos deben dar preferencia de paso a los de emergencia cuando emiten sus señales audibles y visuales.</p>
       </fieldset>
-      <fieldset class="preg" id="p22" data-r="1">
+      <fieldset class="preg" id="p22" data-r="2">
         <legend><span class="num">23</span><span class="cat">Velocidad</span>Conducir a alta velocidad provoca el llamado “efecto túnel”, que consiste en:</legend>
         <div class="ops">
           <label class="op"><input type="radio" name="p22" value="0"><b>A</b><span>Un aumento de los reflejos</span></label>
-          <label class="op"><input type="radio" name="p22" value="1"><b>B</b><span>Una disminución del campo visual</span></label>
-          <label class="op"><input type="radio" name="p22" value="2"><b>C</b><span>Ver mejor lo que está lejos</span></label>
+          <label class="op"><input type="radio" name="p22" value="1"><b>B</b><span>Ver mejor lo que está lejos</span></label>
+          <label class="op"><input type="radio" name="p22" value="2"><b>C</b><span>Una disminución del campo visual</span></label>
           <label class="op"><input type="radio" name="p22" value="3"><b>D</b><span>Escuchar menos el motor</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> Conducir a alta velocidad disminuye el campo visual, lo que se conoce como “efecto túnel”.</p>
@@ -338,20 +355,20 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
       <fieldset class="preg" id="p23" data-r="3">
         <legend><span class="num">24</span><span class="cat">Frenado</span>La distancia de frenado (desde que pisás el freno hasta que el vehículo se detiene) depende de:</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p23" value="0"><b>A</b><span>El pavimento, el clima y el peso del vehículo</span></label>
-          <label class="op"><input type="radio" name="p23" value="1"><b>B</b><span>El estado de los frenos y los neumáticos</span></label>
-          <label class="op"><input type="radio" name="p23" value="2"><b>C</b><span>La velocidad</span></label>
+          <label class="op"><input type="radio" name="p23" value="0"><b>A</b><span>La velocidad</span></label>
+          <label class="op"><input type="radio" name="p23" value="1"><b>B</b><span>El pavimento, el clima y el peso del vehículo</span></label>
+          <label class="op"><input type="radio" name="p23" value="2"><b>C</b><span>El estado de los frenos y los neumáticos</span></label>
           <label class="op"><input type="radio" name="p23" value="3"><b>D</b><span>Todas son correctas</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> La distancia de frenado varía según la velocidad, el estado de los frenos y cubiertas, el pavimento, el clima y el peso del vehículo.</p>
       </fieldset>
-      <fieldset class="preg" id="p24" data-r="2">
+      <fieldset class="preg" id="p24" data-r="1">
         <legend><span class="num">25</span><span class="cat">Fatiga</span>Si te da sueño mientras manejás, ¿cuál es el único remedio eficaz?</legend>
         <div class="ops">
-          <label class="op"><input type="radio" name="p24" value="0"><b>A</b><span>Tomar café y seguir</span></label>
-          <label class="op"><input type="radio" name="p24" value="1"><b>B</b><span>Bajar la ventanilla</span></label>
-          <label class="op"><input type="radio" name="p24" value="2"><b>C</b><span>Descansar</span></label>
-          <label class="op"><input type="radio" name="p24" value="3"><b>D</b><span>Subir el volumen de la música</span></label>
+          <label class="op"><input type="radio" name="p24" value="0"><b>A</b><span>Subir el volumen de la música</span></label>
+          <label class="op"><input type="radio" name="p24" value="1"><b>B</b><span>Descansar</span></label>
+          <label class="op"><input type="radio" name="p24" value="2"><b>C</b><span>Tomar café y seguir</span></label>
+          <label class="op"><input type="radio" name="p24" value="3"><b>D</b><span>Bajar la ventanilla</span></label>
         </div>
         <p class="exp" hidden><strong class="veredicto"></strong> El sueño es uno de los mayores riesgos al conducir: en un instante se puede pasar de estar despierto a dormido. El único remedio es descansar.</p>
       </fieldset>
@@ -362,18 +379,31 @@ h1{font-family:var(--display);font-weight:900;text-transform:uppercase;font-size
     </div>
   </form>
 
+  <section class="mas-tests" aria-labelledby="mas-tests-t">
+    <h2 id="mas-tests-t">Más tests de La Magdalena</h2>
+    <p>Seguí practicando con los otros tests teóricos de la academia.</p>
+    <ul class="grilla-tests">
+        <li><div class="tarj-test actual" aria-current="page"><span class="n">Test de conducción segura</span><strong>Preguntas generales</strong><span class="d">25 preguntas generales: velocidad, prioridades, alcohol, seguridad y motos.</span><span class="ir">Estás haciendo este test</span></div></li>
+        <li><a class="tarj-test" href="test-teorico-1.html"><span class="n">Test teórico 1</span><strong>Normas, preferencias y señales</strong><span class="d">Preferencias de paso, semáforos, señales, giros, adelantamientos y estacionamiento.</span><span class="ir">Hacer este test →</span></a></li>
+        <li><a class="tarj-test" href="test-teorico-2.html"><span class="n">Test teórico 2</span><strong>Velocidad, distancias y manejo defensivo</strong><span class="d">Velocidad adecuada, distancia de detención, regla de los 3 segundos, adelantamiento seguro y conducción en ruta.</span><span class="ir">Hacer este test →</span></a></li>
+        <li><a class="tarj-test" href="test-teorico-3.html"><span class="n">Test teórico 3</span><strong>El vehículo: seguridad y mantenimiento</strong><span class="d">Frenos, neumáticos, luces, cinturón, sillitas, airbag y elementos obligatorios.</span><span class="ir">Hacer este test →</span></a></li>
+        <li><a class="tarj-test" href="test-teorico-4.html"><span class="n">Test teórico 4</span><strong>Alcohol, fatiga, distracciones y clima</strong><span class="d">Alcohol, drogas, medicamentos, sueño, celular, estado emocional y conducción con lluvia, niebla o calor.</span><span class="ir">Hacer este test →</span></a></li>
+        <li><a class="tarj-test" href="test-teorico-5.html"><span class="n">Test teórico 5</span><strong>Motos, ciclistas y peatones</strong><span class="d">Moto y ciclomotor, equipo de protección, frenada, y cuidado de peatones, niños, adultos mayores y ciclistas.</span><span class="ir">Hacer este test →</span></a></li>
+    </ul>
+  </section>
+
   <section class="mas">
-    <h2>Seguí practicando</h2>
+    <h2>¿Querés más práctica?</h2>
     <p>Probá el simulacro de 30 preguntas con cronómetro o estudiá con el manual.</p>
     <div class="acciones" style="margin-top:0">
       <a class="btn btn-negro" href="simulacro.html">Ir al simulacro</a>
       <a class="btn btn-borde" href="assets/docs/guia-nacional-de-conduccion.pdf" target="_blank" rel="noopener">Ver el manual (PDF)</a>
     </div>
     <div class="acciones">
-      <a class="btn btn-rojo" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar mi clase</a>
+      <a class="btn btn-rojo" href="https://wa.me/59895380690?text=Hola%2C%20quiero%20reservar%20una%20clase%20de%20manejo." target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 0 0 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91A9.85 9.85 0 0 0 12.04 2zm4.52 11.99c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.1-.22-.16-.47-.29z"/></svg>Reservar mi clase en La Magdalena</a>
     </div>
   </section>
-  <p class="fuente">Preguntas elaboradas por La Magdalena a partir de la <a href="assets/docs/guia-nacional-de-conduccion.pdf" target="_blank" rel="noopener">Guía Nacional de Conducción</a>. Es un test de práctica: no reemplaza al examen oficial.</p>
+  <p class="fuente">Tests elaborados por la Academia de Choferes La Magdalena a partir de la <a href="assets/docs/guia-nacional-de-conduccion.pdf" target="_blank" rel="noopener">Guía Nacional de Conducción</a>. Son tests de práctica: no reemplazan al examen oficial.</p>
 </main>
 <script>
 (function () {

@@ -6,7 +6,9 @@ Sitio estático (HTML/CSS/JS, sin build ni dependencias).
 ```
 index.html          → página principal (promo 4+1, clases, coche escuela, aprobados, contacto)
 simulacro.html      → simulacro de examen teórico (30 preguntas, revisión, historial y ranking)
-test-conduccion-segura.html → test de conducción segura (25 preguntas propias basadas en la Guía Nacional)
+test-conduccion-segura.html → test de conducción segura (25 preguntas)
+test-teorico-1.html … test-teorico-5.html → 5 tests teóricos de 20 preguntas (temas separados)
+  (todas las preguntas son propias de La Magdalena, basadas en la Guía Nacional de Conducción)
 styles.css / script.js
 assets/
   images/            coche escuela, certificado ANDIPEC (cédula oculta), imagen para redes (og), ícono
